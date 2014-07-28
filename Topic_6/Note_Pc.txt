@@ -1,0 +1,73 @@
+------------------------Version 1.0--------------------------------
+- client: Saml
+- server: Daisy
+
+---- Detail:
+
+* Homepage:
+
+- Right-header: Login form & register + lostpassss : Daisy
+ 
+
+- left: ListUser: June
+
+- List post in content : Nga
+
+- ayout homepage + data demo : Salm
+
+* Wallpage
+
+- form add post: Salm
+
+- provide url: Nga
+
+- create template & data demo: Salm
+
+- List post: Nga
+
+- Register: Daisy
+
+- Login, logout, lost pass: Daisy
+
+* Post Detail Page:
+
+- form add comment: Saml 
+
+- provide url: Nga
+
+- list comment: Nga
+
+- template + data demo: Salm
+
+* User page:
+
+- file image edit profile: Salm
+
+-  change avatar, change info, change password: move to left menu: Saml
+
+- click menu on content => load page
+
+- Translate: June + Nga , Daisy
+
+- change profile: June (1. avatar.html, user_infor.html, password.html)
+
+
+* Sumary
+
+- Salm : join all card 
+- Daisy: cover all future
+- June: contact 2 key menber, test project
+- Db: Nga
+- ERD: Daisy
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,3 @@
+﻿Account: username, password, email, avartar, fullname, birthday
+Post: idPost, author, userWall, title, content, timepost, timeupdate
+Comment: idComment, idPost, idAuthor, timeComment, conntent, timeUpdate

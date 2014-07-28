@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Demo Bootstrap, JS, JQuery</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        body
+        {
+            padding-top: 50px;
+            padding-bottom: 20px;
+        }
+    </style>
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+</head>
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <div class="container-fluid">
+        <!-- Example row of columns -->
+        <div class="row">
+            <div class="col-md-8">
+                <h3 class="lead text-uppercase">Contact Form</h3>
+                <form class="form-horizontal" role="form" id="contactForm">
+                    <div class="form-group">
+                        <label for="txtFullName" class="col-md-3 control-label">Full name <span class="text-danger">(*)</span></label>
+                        <div class="col-md-9">
+                            <input type="email" class="form-control" id="txtFullName" placeholder="Enter your name">
+                            <p class="text-danger" id="txtFullNameError"></p>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="txtCompany" class="col-md-3 control-label">Company <span class="text-danger">(*)</span></label>
+                        <div class="col-md-9">
+                            <input type="text" class="form-control" id="txtCompany" placeholder="Enter your company">
+                            <p class="text-danger" id="txtCompanyError"></p>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="txtEmail" class="col-md-3 control-label">Email <span class="text-danger">(*)</span></label>
+                        <div class="col-md-9">
+                            <input type="text" class="form-control" id="txtEmail" placeholder="Enter your email">
+                            <p class="text-danger" id="txtEmailError"></p>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="txtMessage" class="col-md-3 control-label">Message <span class="text-danger">(*)</span></label>
+                        <div class="col-md-9">
+                            <textarea  class="form-control" id="txtMessage" placeholder="Enter your message"></textarea>
+                            <p class="text-danger" id="txtMessageError"></p>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="txtSecurity" class="col-md-3 control-label">Security check <span class="text-danger">(*)</span></label>
+                        <div class="col-md-9">
+                            <input id="txtSecurityNum1" class="form-control-static" readonly="readonly" style="margin-bottom: 10px;" />
+                            <strong>&nbsp; + &nbsp;</strong>
+                            <input id="txtSecurityNum2" class="form-control-static" readonly="readonly"  style="margin-bottom: 10px;" />
+                            <strong>&nbsp; = &nbsp;</strong>
+                            <input class="form-control-static" id="txtSecurityResult" style="margin-bottom: 10px;" />
+                            <p class="text-danger" id="txtSecurityResultError"></p>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-offset-3 col-md-10">
+                            <button id="btnJS" class="btn btn-default">Submit with JS</button>
+                            <button id="btnJQ" class="btn btn-default">Submit with JQuery</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-3 col-md-offset-1">
+                <h3 class="text-uppercase">Contact Information</h3>
+                <address>
+                    <strong>Ngo Van Thiet</strong><br>
+                    52 Dat Thanh Street, Ward 6, Tan Binh District, HCM City, Vietnam<br>
+                    <abbr title="Phone">P:</abbr>
+                    (84) 983-275-463
+                </address>
+                <address>
+                    <strong>Contact</strong><br>
+                    <a class="btn btn-sm btn-danger" href="mailto:#">Thiet.NgoVan@vn.bosch.com</a>
+                </address>
+            </div>
+        </div>
+        <hr>
+        <footer>
+            <p>&copy; Bommer 2014</p>
+        </footer>
+    </div>
+    <!-- /container -->
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

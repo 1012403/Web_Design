@@ -1,0 +1,68 @@
+﻿Mô tả:
+ - Dùng Framwork CodeIginiter
+ - Làm Website dạng Blog, giống Facebook thu nhỏ.
+ - List Screens:
+1. Register, login, logout, lấy lại mật khẩu (lost password) - get pass thông qua email.
+2. Homepage
+3. Wallpage
+4. Post detail page
+
+ - Chi tiết:
+1. 1 Page chia thành 5 vùng: header, left, right, content, footer
+
+2. Header có logo, banner, User info theo file mô tả.
+
+3. Header có main menu gồm: Trang chủ, List User, Contact
+
+5. Mỗi post, show: title, content, số người đã đọc post (vào post detail page ==> tăng count lên), số comment của post.
+6. Home page
+ - Content: List last posts of all User
+ 
+7. Wallpage
+ - Form add new Post
+ - Content: List last posts of current User
+ - Post of User: có thể là User A post in wall of B (author: user A) hoặc chính user A post trên Wall của mình (giống facebook)
+ - Cho phép edit 1 post nào đó, nếu mình là author, có thể post đó nằm trên Wall of User khác.
+ - Cho phép xóa 1 post nào đó, nếu mình là author or post được add trên Wall của mình
+ 
+8. Post Detail page
+ - Content: Title & content of post, dưới title: show author kèm avatar
+ - Show form add Comment dưới content of Post
+ - Show list last comment dưới form add Comment
+ - Cho phép edit 1 comment nào đó, nếu mình là author của comment đó
+ - Cho phép xóa 1 comment nào đó:
+  + mình là author.
+  + comment được add trong post mà mình làm author.
+  + comment được add trong post trên wall của mình.
+ 
+9. User Page
+ - Trong Wall page, cho 1 link "Edit user info", click vào ==> vào page này
+ - User info: email, username, password, fullname, birthday, avatar
+ - Cho phép change password.
+ - Change Avatar & các info khác TRỪ email
+ 
+10. Register page:
+ - Username
+ - Password
+ - Fullname
+ - Birthday: select day, month, year (change month ==> day change, Ex: select month 02 ==> day max = 28 or 29, month = 1 ==> day max = 31, v.v.)
+ - Avatar (upload image)
+ - Check exist email, username.
+ 
+11. Login Page:
+ - Username
+ - Password
+ 
+12. Lost password:
+ - Input Email muốn get Password.
+ - Logic:
+  + Check email trong hệ thống, 
+  + Nếu đúng ==> create 1 password tạm (sẽ hết hạn trong 12h kế tiếp)
+  + Gửi pass này qua email cho User
+  + User có thể dùng pass này để login bình thường.
+ 
+Lưu ý chung:
+ - Add, edit, delete post or comment: làm bằng Jquery Ajax, ko load lại trang
+ - Để test phần gửi mail, enable extension=php_openssl.dll trong xampp/php/php.ini
+ - Download CodeIginiter trước khi làm
+- Translate all Website

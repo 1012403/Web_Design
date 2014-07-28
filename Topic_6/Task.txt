@@ -1,0 +1,70 @@
+﻿------------------------- Ver1.0 ------
+Note all Problems:
+1. Home Page
+ - No problem.
+ - Tách các file đẻ reuse và dể quản lý
+ => Solution:
+ - Tạo một khung chuẩn, mỗi khung là một page
+ - header, footer, left, right, mỗi thứ là một file
+ - include 4 file vào 4 vị trí tương ứng trong home.html
+ - phần content của mỗi page được định nghĩa trong chính page đó
+
+2. Wall page:
+ -  Author và user of post on wall <-- DB
+ Note: Post được post trên wall của user nào thì post đó thuộc về user đó, ko nhất thiết user đó là author của post
+==> Solution:
+ - 
+3. Register:
+ - load img, lưu vào db
+ 
+4. Login:
+ - No problem
+ 
+5. Logout:
+ - No problem
+ 
+6. Lost Password:
+ - set thời gian hiệu lực của mail (12h kế tiếp)
+ - hệ thống send email cho user
+ - pass random
+ 
+7. Post Detail.
+ - cmt trong post trên wall của mình, và cmt trong post trên post mà mình làm author ==> xóa cmt
+
+8. User Page
+ - xử lý load file img
+ - khi change info  => update data trong db
+ - lưu lại img trong db
+ 
+9. common requirement
+ -  Add, edit, delete post or comment: làm bằng Jquery Ajax, ko load lại trang
+ - translate all website
+
+---------Phân công--------
+1. Homepage
+  - header: login form & register + lost pass link: Daisy
+ - left: list user: June
+ - Right menu: Salm
+- list post: content: Nga
+- Layout home page: salm + data demo
+2. Wall page:
+	- content: add post: Nga + salm
+	- Listpost: dùng lại homapage
+	- create template + data demo: salm
+3. Register, loin, logout, lost pass: Daisy 
+		Template: Salm
+4. Post Detail Page
+	- form add comment; salm
+	- list comment + author cmt: Nga
+5. User page:(chia thành 3 file: avatar.html, user_infor.html, password.htlm)
+	- change avatar, change info, change password: june
+	- translate: JUne + ...
+
+
+
+	- 
+
+
+		
+
+ 
